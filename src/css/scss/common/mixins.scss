@@ -1,0 +1,36 @@
+@mixin clear {
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+@mixin font {
+    font-family: 'SUIT Variable',AppleSDGothicNeo, -apple-system,"Helvetica Neue","Apple SD Gothic Neo",Arial,sans-serif;
+}
+
+@mixin radius {
+    border-radius: 8px;
+}
+
+/*컬러변수*/
+/*main - 퍼플 */
+$purple: #6A3CBC;
+$purple_dark: #461B93;
+$purple_light3: #8253D7;
+$purple_light2: #AB7DFF;
+$purple_light1: #DBC8FF;
+/*gray - 폰트 */
+$grey_dark2:#171717;
+$grey_dark1:#4E4F54;
+$grey:#949494;
+$grey_light3:#E1E2E3;
+$grey_light2:#f4f4f4;
+$grey_light3:#f9f9f9;
+$white:#ffffff;
+
+
+
+
+

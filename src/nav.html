@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>menu</title>
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+</head>
+<body>
+    <section class="htb_container">
+        <header class="header white">
+            <div class="warp_header">
+             <div class="inner">
+                 <!-- 모바일 메뉴 버튼 -->
+                 <div class="wrap_menu">
+                    <a href="#" class="btn_menu"><img src="./image/common/header_menu.svg"></a>
+                     <ul class="menu_list">
+                         <li class="item">
+                             <a href="#" class="menu_link"><img src="./image/common/header_la.svg" alt="언어변경" width="25" height="25"></a>
+                         </li>
+                         <li class="item">
+                            <a href="#" class="menu_link"><img src="./image/common/header_my.svg" alt="마이페이지" width="25" height="25"></a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="menu_link"><img src="./image/common/header_bell_w.svg" alt="알림" width="25" height="25"></a>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+            </div>
+         </header>
+         <div class="content nav">
+            <div class="warp_content">
+                <form action="">
+                    <div class="search">
+                        <input type="text" name="query" value="">
+                        <button type="submit">검색</button>
+                    </div>
+                </form>
+                <div>
+                    <div class="nav_panel">
+                        <div class="inner">
+                            <ul class="tab_nav">
+                              <li><a href="#tab01">탭1</a></li>
+                              <li><a href="#tab02">탭2</a></li>
+                            </ul>
+                            <div class="tabcontent">
+                              <div id="tab01">tab1 content</div>
+                              <div id="tab02">tab2 content</div>
+                            </div>
+                        </div><!--tab-->
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+	$('.tabcontent > div').hide();
+	$('.tab_nav a').click(function () {
+		$('.tabcontent > div').hide().filter(this.hash).fadeIn();
+		$('.tab_nav a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':eq(0)').click();
+  });
+
+    </script>
+</body>
+</html>

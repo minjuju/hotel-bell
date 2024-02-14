@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* ***********************************
+ *
+ *    Ire's CSS Reset & Base
+ *
+ * *********************************** */
+/* Reset margin, padding, border
+ * *********************************** */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Typography
+ * *********************************** */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Layout
+ * *********************************** */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Elements
+ * *********************************** */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+.blind {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*컬러변수*/
+/*main - 퍼플 */
+/*gray - 폰트 */
+/*style*/
+.htb_container {
+  font-family: "SUIT Variable", AppleSDGothicNeo, -apple-system, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #461B93;
+}
+.htb_container .header {
+  padding: 20px;
+  overflow: hidden;
+}
+.htb_container .header .btn_menu {
+  float: left;
+}
+.htb_container .header .menu_list {
+  overflow: hidden;
+  float: right;
+}
+.htb_container .header .menu_list li {
+  float: left;
+  padding-right: 6px;
+}
+.htb_container .header .menu_list li:last-child {
+  padding-right: 0;
+}
+.htb_container .content.main {
+  margin-top: 78px;
+}
+.htb_container .content.main .section01 {
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 22px;
+}
+.htb_container .content.main .section01 .main_cont {
+  line-height: 150%;
+}
+.htb_container .content.main .section01 .checkout_btn {
+  display: block;
+  margin-top: 32px;
+  max-width: 100%;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.htb_container .content.main .section01 .checkout_btn .text {
+  font-size: 16px;
+  color: #461B93;
+  font-weight: bold;
+}
+.htb_container .content.main .section01 .checkout_btn .text::before {
+  content: "";
+  display: block;
+  background: "";
+}
+.htb_container .content.main .section02 {
+  background-color: #ffffff;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+.htb_container .content.main .section02 h3 {
+  color: #461B93;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.htb_container .content.main .section02 .list {
+  overflow-y: scroll;
+  width: 100%;
+  white-space: nowrap;
+}
+.htb_container .content.main .section02 .list li {
+  display: inline-block;
+  margin-right: 12px;
+}
+.htb_container .content.main .section02 .list li:last-child {
+  margin-right: 0;
+}
+.htb_container .content.main .section02 .ad_wrap {
+  margin-top: 28px;
+}
+.htb_container .content.nav .tabcontent {
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+}
